@@ -13,11 +13,22 @@ app.get('/', function(req, res){
   res.json({"status":200});
 });
 
+app.get('/test', function(req, res){
+
+	mongo.find('jobtag',{},{"id":true,"tag_type":true,"display_name":true},function(data){
+		
+		
+		
+		res.render('index.hbs');
+	});
+  
+});
+
 app.get('/api/jobcloud', function(req, res){
   
-  mongo.find('jobtag',{},function(data){
+  mongo.find('jobtag',{},{"id":true,"tag_type":true,"display_name":true},function(data){
 	res.json(data);
-  })
+  });
   
 });
 

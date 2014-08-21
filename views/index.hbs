@@ -1,71 +1,116 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>MARTINI 150</title>
-    <link rel="stylesheet" href="assets/styles/reset.css" />
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
-    <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
-    <script src="assets/js/modernizr.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/css3-mediaqueries.js"></script>
-</head>
-
-<body>
-    <!--[if lte IE 7]><p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p><![endif]-->
-    <noscript>Your browser does not support JavaScript! Please enable it!</noscript>
-    <div id="wrapper">
-        <div id="agegate" class="page-wrapper">
-            <div id="agegate-wrapper">
-                <img src="assets/images/martini-logo-small.png" alt="" id="martini-logo-small" />
-                
-                <form action="" method="post" id="age-verification-form">
-                    <div class="enter-bday-lbl">Enter your birthday:</div>
-                    <div class="form-age-wrapper">
-                        <input type="text" name="Day" class="day-input input-placeholder digits-only" value="DD" maxlength="2" data-default="DD" />
-                        <input type="text" name="Month" class="month-input input-placeholder digits-only" value="MM" maxlength="2" data-default="MM" />
-                        <input type="text" name="Year" class="year-input input-placeholder digits-only" value="YYYY" maxlength="4" data-default="YYYY" />
-                        <input type="checkbox" name="RememberMe" id="input-remember-me" value="1" class="hidden" />
-                        <input type="hidden" name="Country" id="input-country" value="" />
-                        <a href="home.html" title="" class="red-sq-btn"><span>Enter</span></a>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="enter-ctry-lbl">Where do you live?</div>
-                    <div class="country-btn-wrapper">
-                        <a href="" title="" class="form-country-dd">
-                            <span>SELECT YOUR COUNTRY</span>
-                        </a>
-                    </div>
-                    
-                    <div class="form-remember">
-                        <a href="" title="" id="fake-checkbox-RememberMe" class="input-remember-me fake-checkbox">REMEMBER ME</a>
-                    </div>
-
-                		<h2>To enter this site you need to be of legal drinking age in your country of residence. </h2>
-                    
-                    <div class="terms-wrapper"><span>By entering you agree to our </span><a href="terms_nolog.html" title="Terms and Conditions" target="_blank">Terms and Conditions</a> and <a href="policy_nolog.html" title="Privacy Policy" target="_blank">Privacy Policy</a>.</div>
-                </form>
-                
-                <h3 class="luck-is-attitude block-centered">Luck is an attitude</h3>
-            </div>
-            <div class="clear"></div>
-            <div id="countries-list">
-                <ul class="casting-markets"><li class="armenia casting-market" code="AM-EN" country="armenia"><span class="spanFlag armenia"></span><span class="countryName">Armenia</span></li><li class="belgium casting-market" code="BE-NL" country="belgium"><span class="spanFlag belgium"></span><span class="countryName">Belgium</span></li><li class="belgium casting-market" code="BE-FR" country="belgium"><span class="spanFlag belgium"></span><span class="countryName">Belgium</span></li><li class="brazil casting-market" code="BR-PT" country="brazil"><span class="spanFlag brazil"></span><span class="countryName">Brazil</span></li><li class="bulgaria casting-market" code="BG-EN" country="bulgaria"><span class="spanFlag bulgaria"></span><span class="countryName">Bulgaria</span></li><li class="estonia casting-market" code="EE-EN" country="estonia"><span class="spanFlag estonia"></span><span class="countryName">Estonia</span></li><li class="georgia casting-market" code="GE-EN" country="georgia"><span class="spanFlag georgia"></span><span class="countryName">Georgia</span></li><li class="germany casting-market" code="DE-DE" country="germany"><span class="spanFlag germany"></span><span class="countryName">Germany</span></li><li class="greece casting-market" code="GR-EN" country="greece"><span class="spanFlag greece"></span><span class="countryName">Greece</span></li><li class="hungary casting-market" code="HU-HU" country="hungary"><span class="spanFlag hungary"></span><span class="countryName">Hungary</span></li><li class="israel casting-market" code="IL-EN" country="israel"><span class="spanFlag israel"></span><span class="countryName">Israel</span></li><li class="italy casting-market" code="IT-IT" country="italy"><span class="spanFlag italy"></span><span class="countryName">Italy</span></li><li class="kazakhstan casting-market" code="KZ-EN" country="kazakhstan"><span class="spanFlag kazakhstan"></span><span class="countryName">Kazakhstan</span></li><li class="latvia casting-market" code="LV-LV" country="latvia"><span class="spanFlag latvia"></span><span class="countryName">Latvia</span></li><li class="lebanon casting-market" code="LB-EN" country="lebanon"><span class="spanFlag lebanon"></span><span class="countryName">Lebanon</span></li><li class="lithuania casting-market" code="LT-EN" country="lithuania"><span class="spanFlag lithuania"></span><span class="countryName">Lithuania</span></li><li class="netherlands casting-market" code="NL-NL" country="netherlands"><span class="spanFlag netherlands"></span><span class="countryName">Netherlands</span></li><li class="portugal casting-market" code="PT-PT" country="portugal"><span class="spanFlag portugal"></span><span class="countryName">Portugal</span></li><li class="romania casting-market" code="RO-EN" country="romania"><span class="spanFlag romania"></span><span class="countryName">Romania</span></li><li class="russia casting-market" code="RU-RU" country="russia"><span class="spanFlag russia"></span><span class="countryName">Russia</span></li><li class="south-africa casting-market" code="ZA-EN" country="south-africa"><span class="spanFlag south-africa"></span><span class="countryName">South Africa</span></li><li class="spain casting-market" code="ES-ES" country="spain"><span class="spanFlag spain"></span><span class="countryName">Spain</span></li><li class="ukraine casting-market" code="UA-EN" country="ukraine"><span class="spanFlag ukraine"></span><span class="countryName">Ukraine</span></li><li class="united-kingdom casting-market" code="GB-EN" country="united-kingdom"><span class="spanFlag united-kingdom"></span><span class="countryName">United Kingdom</span></li></ul><ul class="markets"><li class="albania" code="AL-EN" country="albania"><span class="spanFlag albania"></span><span class="countryName">Albania</span></li><li class="argentina" code="AR-ES" country="argentina"><span class="spanFlag argentina"></span><span class="countryName">Argentina</span></li><li class="australia" code="AU-EN" country="australia"><span class="spanFlag australia"></span><span class="countryName">Australia</span></li><li class="austria" code="AT-DE" country="austria"><span class="spanFlag austria"></span><span class="countryName">Austria</span></li><li class="azerbaijan" code="AZ-EN" country="azerbaijan"><span class="spanFlag azerbaijan"></span><span class="countryName">Azerbaijan</span></li><li class="bahamas" code="BS-EN" country="bahamas"><span class="spanFlag bahamas"></span><span class="countryName">Bahamas</span></li><li class="bahrain" code="BH-EN" country="bahrain"><span class="spanFlag bahrain"></span><span class="countryName">Bahrain</span></li><li class="belarus" code="BY-EN" country="belarus"><span class="spanFlag belarus"></span><span class="countryName">Belarus</span></li><li class="belize" code="BL-EN" country="belize"><span class="spanFlag belize"></span><span class="countryName">Belize</span></li><li class="bermuda" code="BM-EN" country="bermuda"><span class="spanFlag bermuda"></span><span class="countryName">Bermuda</span></li><li class="bolivia" code="BO-ES" country="bolivia"><span class="spanFlag bolivia"></span><span class="countryName">Bolivia</span></li><li class="bosnia" code="BA-EN" country="bosnia"><span class="spanFlag bosnia"></span><span class="countryName">Bosnia</span></li><li class="cameroon" code="CM-EN" country="cameroon"><span class="spanFlag cameroon"></span><span class="countryName">Cameroon</span></li><li class="canada" code="AB-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Alberta</span></li><li class="canada" code="BC-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - British Columbia</span></li><li class="canada" code="MB-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Manitoba</span></li><li class="canada" code="NB-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - New Brunswick</span></li><li class="canada" code="ND-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Newfoundland</span></li><li class="canada" code="NW-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Northwest Territories</span></li><li class="canada" code="NS-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Nova Scotia</span></li><li class="canada" code="NT-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Nunavut</span></li><li class="canada" code="ON-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Ontario</span></li><li class="canada" code="PE-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Prince Edward Island</span></li><li class="canada" code="QC-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Quebec</span></li><li class="canada" code="QC-FR" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Quebec</span></li></ul><ul class="markets"><li class="canada" code="SK-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Saskatchewan</span></li><li class="canada" code="YN-EN" country="canada"><span class="spanFlag canada"></span><span class="countryName">Canada - Yukon</span></li><li class="chile" code="CL-ES" country="chile"><span class="spanFlag chile"></span><span class="countryName">Chile</span></li><li class="china" code="CN-EN" country="china"><span class="spanFlag china"></span><span class="countryName">China</span></li><li class="colombia" code="CO-ES" country="colombia"><span class="spanFlag colombia"></span><span class="countryName">Colombia</span></li><li class="costa-rica" code="CR-ES" country="costa-rica"><span class="spanFlag costa-rica"></span><span class="countryName">Costa Rica</span></li><li class="croatia" code="HR-EN" country="croatia"><span class="spanFlag croatia"></span><span class="countryName">Croatia</span></li><li class="czech-republic" code="CZ-CZ" country="czech-republic"><span class="spanFlag czech-republic"></span><span class="countryName">Czech Republic</span></li><li class="denmark" code="DK-EN" country="denmark"><span class="spanFlag denmark"></span><span class="countryName">Denmark</span></li><li class="dominican-republic" code="DR-ES" country="dominican-republic"><span class="spanFlag dominican-republic"></span><span class="countryName">Dominican Republic</span></li><li class="ecuador" code="EC-ES" country="ecuador"><span class="spanFlag ecuador"></span><span class="countryName">Ecuador</span></li><li class="egypt" code="EG-EN" country="egypt"><span class="spanFlag egypt"></span><span class="countryName">Egypt</span></li><li class="el-salvador" code="ER-ES" country="el-salvador"><span class="spanFlag el-salvador"></span><span class="countryName">El Salvador</span></li><li class="fiji" code="FJ-EN" country="fiji"><span class="spanFlag fiji"></span><span class="countryName">Fiji</span></li><li class="finland" code="FI-EN" country="finland"><span class="spanFlag finland"></span><span class="countryName">Finland</span></li><li class="global" code="GL-EN" country="global"><span class="spanFlag global"></span><span class="countryName">Global</span></li><li class="global" code="GL-ES" country="global"><span class="spanFlag global"></span><span class="countryName">Global</span></li><li class="guatemala" code="GT-ES" country="guatemala"><span class="spanFlag guatemala"></span><span class="countryName">Guatemala</span></li><li class="honduras" code="HN-ES" country="honduras"><span class="spanFlag honduras"></span><span class="countryName">Honduras</span></li><li class="hong-kong" code="HK-EN" country="hong-kong"><span class="spanFlag hong-kong"></span><span class="countryName">Hong Kong</span></li><li class="iceland" code="IS-EN" country="iceland"><span class="spanFlag iceland"></span><span class="countryName">Iceland</span></li><li class="india" code="IN-EN" country="india"><span class="spanFlag india"></span><span class="countryName">India</span></li><li class="indonesia" code="ID-EN" country="indonesia"><span class="spanFlag indonesia"></span><span class="countryName">Indonesia</span></li><li class="ireland" code="IE-EN" country="ireland"><span class="spanFlag ireland"></span><span class="countryName">Ireland</span></li></ul><ul class="markets"><li class="jamaica" code="JM-EN" country="jamaica"><span class="spanFlag jamaica"></span><span class="countryName">Jamaica</span></li><li class="japan" code="JP-EN" country="japan"><span class="spanFlag japan"></span><span class="countryName">Japan</span></li><li class="kenya" code="KE-EN" country="kenya"><span class="spanFlag kenya"></span><span class="countryName">Kenya</span></li><li class="lesotho" code="LS-EN" country="lesotho"><span class="spanFlag lesotho"></span><span class="countryName">Lesotho</span></li><li class="liechtenstein" code="LI-EN" country="liechtenstein"><span class="spanFlag liechtenstein"></span><span class="countryName">Liechtenstein</span></li><li class="luxembourg" code="LU-EN" country="luxembourg"><span class="spanFlag luxembourg"></span><span class="countryName">Luxembourg</span></li><li class="macedonia" code="MK-EN" country="macedonia"><span class="spanFlag macedonia"></span><span class="countryName">Macedonia</span></li><li class="malaysia" code="MY-EN" country="malaysia"><span class="spanFlag malaysia"></span><span class="countryName">Malaysia</span></li><li class="malta" code="MT-EN" country="malta"><span class="spanFlag malta"></span><span class="countryName">Malta</span></li><li class="mauritius" code="MU-EN" country="mauritius"><span class="spanFlag mauritius"></span><span class="countryName">Mauritius</span></li><li class="mexico" code="MX-ES" country="mexico"><span class="spanFlag mexico"></span><span class="countryName">Mexico</span></li><li class="moldova" code="MD-EN" country="moldova"><span class="spanFlag moldova"></span><span class="countryName">Moldova</span></li><li class="montenegro" code="ME-EN" country="montenegro"><span class="spanFlag montenegro"></span><span class="countryName">Montenegro</span></li><li class="nepal" code="NP-EN" country="nepal"><span class="spanFlag nepal"></span><span class="countryName">Nepal</span></li><li class="new-zealand" code="NZ-EN" country="new-zealand"><span class="spanFlag new-zealand"></span><span class="countryName">New Zealand</span></li><li class="nicaragua" code="NC-ES" country="nicaragua"><span class="spanFlag nicaragua"></span><span class="countryName">Nicaragua</span></li><li class="norway" code="NO-EN" country="norway"><span class="spanFlag norway"></span><span class="countryName">Norway</span></li><li class="other" code="OT-EN" country="other"><span class="spanFlag other"></span><span class="countryName">Other</span></li><li class="palau" code="PW-EN" country="palau"><span class="spanFlag palau"></span><span class="countryName">Palau</span></li><li class="panama" code="PA-ES" country="panama"><span class="spanFlag panama"></span><span class="countryName">Panama</span></li><li class="papua-new-guinea" code="PG-EN" country="papua-new-guinea"><span class="spanFlag papua-new-guinea"></span><span class="countryName">Papua New Guinea</span></li><li class="paraguay" code="PY-ES" country="paraguay"><span class="spanFlag paraguay"></span><span class="countryName">Paraguay</span></li><li class="peru" code="PE-ES" country="peru"><span class="spanFlag peru"></span><span class="countryName">Peru</span></li><li class="philippines" code="PH-EN" country="philippines"><span class="spanFlag philippines"></span><span class="countryName">Philippines</span></li></ul><ul class="markets"><li class="poland" code="PL-PL" country="poland"><span class="spanFlag poland"></span><span class="countryName">Poland</span></li><li class="puerto-rico" code="PR-ES" country="puerto-rico"><span class="spanFlag puerto-rico"></span><span class="countryName">Puerto Rico</span></li><li class="samoa" code="WS-EN" country="samoa"><span class="spanFlag samoa"></span><span class="countryName">Samoa</span></li><li class="serbia" code="RS-EN" country="serbia"><span class="spanFlag serbia"></span><span class="countryName">Serbia</span></li><li class="singapore" code="SG-EN" country="singapore"><span class="spanFlag singapore"></span><span class="countryName">Singapore</span></li><li class="slovenia" code="SI-EN" country="slovenia"><span class="spanFlag slovenia"></span><span class="countryName">Slovenia</span></li><li class="solomon-islands" code="SB-EN" country="solomon-islands"><span class="spanFlag solomon-islands"></span><span class="countryName">Solomon Islands</span></li><li class="south-korea" code="KR-EN" country="south-korea"><span class="spanFlag south-korea"></span><span class="countryName">South Korea</span></li><li class="sri-lanka" code="LK-EN" country="sri-lanka"><span class="spanFlag sri-lanka"></span><span class="countryName">Sri Lanka</span></li><li class="swaziland" code="SZ-EN" country="swaziland"><span class="spanFlag swaziland"></span><span class="countryName">Swaziland</span></li><li class="sweden" code="SE-EN" country="sweden"><span class="spanFlag sweden"></span><span class="countryName">Sweden</span></li><li class="switzerland" code="CH-FR" country="switzerland"><span class="spanFlag switzerland"></span><span class="countryName">Switzerland</span></li><li class="switzerland" code="CH-DE" country="switzerland"><span class="spanFlag switzerland"></span><span class="countryName">Switzerland</span></li><li class="taiwan" code="TW-EN" country="taiwan"><span class="spanFlag taiwan"></span><span class="countryName">Taiwan</span></li><li class="tanzania" code="TZ-EN" country="tanzania"><span class="spanFlag tanzania"></span><span class="countryName">Tanzania</span></li><li class="thailand" code="TH-EN" country="thailand"><span class="spanFlag thailand"></span><span class="countryName">Thailand</span></li><li class="tonga" code="TO-EN" country="tonga"><span class="spanFlag tonga"></span><span class="countryName">Tonga</span></li><li class="trinidad--tobago" code="TT-EN" country="trinidad--tobago"><span class="spanFlag trinidad--tobago"></span><span class="countryName">Trinidad &amp; Tobago</span></li><li class="turkey" code="TR-TR" country="turkey"><span class="spanFlag turkey"></span><span class="countryName">Turkey</span></li><li class="united-states" code="US-EN" country="united-states"><span class="spanFlag united-states"></span><span class="countryName">United States</span></li><li class="uruguay" code="UR-ES" country="uruguay"><span class="spanFlag uruguay"></span><span class="countryName">Uruguay</span></li><li class="uzbekistan" code="UZ-EN" country="uzbekistan"><span class="spanFlag uzbekistan"></span><span class="countryName">Uzbekistan</span></li><li class="venezuela" code="VE-ES" country="venezuela"><span class="spanFlag venezuela"></span><span class="countryName">Venezuela</span></li><li class="zimbabwe" code="ZW-EN" country="zimbabwe"><span class="spanFlag zimbabwe"></span><span class="countryName">Zimbabwe</span></li></ul>
-            </div>
-        </div>
-        <div id="background"><img src="assets/images/background-agegate.jpg" alt="" /></div>
-    </div>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-29738533-52']);
-        _gaq.push(['_trackPageview']);
-       
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-</body>
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Foundation Template | Feed</title>
+		<meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
+		<meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
+		<meta name="copyright" content="ZURB, inc. Copyright (c) 2013"/>
+		<link rel="stylesheet" href="/vendor/foundation-5.3.3/css/foundation.min.css"/>
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
+		<link href="/jquery.tagit.css" rel="stylesheet" type="text/css">
+		<script src="/vendor/foundation-5.3.3/js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+	 
+		<div class="row">
+			<div class="large-12 columns" style="margin-top:80px;">
+				
+				<ul id="myTags">
+					
+				</ul>
+			</div>
+		</div>
+	 
+	 <hr />
+	 
+		<div class="row">
+			 
+			<div class="large-12 columns">				
+					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
+					<div class="large-11 columns">
+						<h5>TeliportMe</h5>
+						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+						<ul class="inline-list">
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+						</ul>
+					</div>		 		 
+			</div>
+			
+			<div class="large-12 columns">				
+					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
+					<div class="large-11 columns">
+						<h5>TeliportMe</h5>
+						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+						<ul class="inline-list">
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+						</ul>
+					</div>		 		 
+			</div>
+			
+			<div class="large-12 columns">				
+					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
+					<div class="large-11 columns">
+						<h5>TeliportMe</h5>
+						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+						<ul class="inline-list">
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+						</ul>
+					</div>		 		 
+			</div>
+			
+			<div class="large-12 columns">				
+					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
+					<div class="large-11 columns">
+						<h5>TeliportMe</h5>
+						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+						<ul class="inline-list">
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+							<li><a href="">Bangalore</a></li>
+						</ul>
+					</div>		 		 
+			</div>
+			
+		</div>
+	 
+		<footer class="row">
+			<div class="large-12 columns">
+				&nbsp;
+			</div>
+		</footer>
+		
+		<script src="/vendor/foundation-5.3.3/js/vendor/jquery.js"></script>
+		<script src="/vendor/foundation-5.3.3/js/foundation.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/tag-it.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		  $(document).foundation();
+		  var doc = document.documentElement;
+		  doc.setAttribute('data-useragent', navigator.userAgent);
+		</script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var sampleTags = ['c++', 'java', 'php', 'coldfusion', 'javascript', 'asp', 'ruby', 'python', 'c', 'scala', 'groovy', 'haskell', 'perl', 'erlang', 'apl', 'cobol', 'go', 'lua'];
+				$("#myTags").tagit({
+					autocomplete: {delay: 0, minLength: 2},
+					availableTags: sampleTags,
+				});
+			});
+		</script>	
+		
+	</body>
 </html>

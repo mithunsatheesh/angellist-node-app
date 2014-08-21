@@ -14,13 +14,13 @@ var connect = function(cb) {
   
 };
 
-var find = function(col,query,cb) {
+var find = function(col,query,fields,cb) {
 	
 	connect(function(db) {
 		
 		var collection = db.collection(col);
 		
-		collection.find(query).toArray(function(err, results) {
+		collection.find(query,fields).toArray(function(err, results) {
 			
 			cb(results);
             db.close();
