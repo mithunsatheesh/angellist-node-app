@@ -31,6 +31,23 @@ var find = function(col,query,fields,cb) {
 	
 };
 
+var findLimited = function(col,query,fields,skip,limit,cb) {
+	
+	connect(function(db) {
+		
+		var collection = db.collection(col);
+		
+		collection.find(query,fields).skip(skip).limit(limit).toArray(function(err, results) {
+			
+			cb(results);
+            db.close();
+		
+		});
+		
+	});
+	
+};
+
 var FnFindOne = function(col,query,cb) {
 	
 	connect(function(db) {
@@ -118,6 +135,7 @@ var FnUpdate = function(col,query,doc,options,cb) {
 };
 
 module.exports.find = find;
+module.exports.findLimited = findLimited;
 module.exports.findAndSort = findAndSort;
 module.exports.FnInsert = insert;
 module.exports.FnUpdate = FnUpdate;

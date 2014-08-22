@@ -4,10 +4,11 @@
   "description": "angel list application to search jobs ",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.6.5",
     "express": "^4.8.2",
     "hbs": "^2.7.0",
-    "request": "^2.40.0",
-    "mongodb": "^1.4.8"
+    "mongodb": "^1.4.8",
+    "request": "^2.40.0"
   },
   "devDependencies": {},
   "scripts": {

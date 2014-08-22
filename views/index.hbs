@@ -9,80 +9,59 @@
 		<meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 		<meta name="copyright" content="ZURB, inc. Copyright (c) 2013"/>
 		<link rel="stylesheet" href="/vendor/foundation-5.3.3/css/foundation.min.css"/>
-		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
-		<link href="/jquery.tagit.css" rel="stylesheet" type="text/css">
 		<script src="/vendor/foundation-5.3.3/js/vendor/modernizr.js"></script>
+		<style type="text/css">
+			.searchbox {
+				padding:10px;
+				font-size:14px;
+				width:220px;
+			}
+		</style>
 	</head>
 	<body>
 	 
-		<div class="row">
-			<div class="large-12 columns" style="margin-top:80px;">
+		<div class="row">			
+			<div class="large-1 columns" style="margin-top:80px;">
 				
-				<ul id="myTags">
-					
-				</ul>
+				&nbsp;
+				
+			</div>
+			<div class="large-3 columns" style="margin-top:80px;">
+				
+				<input id="skilltagslist" class="searchbox" placeholder="Type skill here" list="tagslist1" />
+				
+				<datalist  id="tagslist1">
+					{{{innerhtml.SkillTag}}}
+				</datalist >
+			</div>
+			<div class="large-3 columns" style="margin-top:80px;">
+				
+				<input id="locationtagslist" class="searchbox" placeholder="Type location here" list="tagslist2" />
+				
+				<datalist  id="tagslist2">
+					{{{innerhtml.LocationTag}}}
+				</datalist >
+			</div>
+			<div class="large-3 columns" style="margin-top:80px;">
+				
+				<input id="roletagslist" class="searchbox" placeholder="Type role here" list="tagslist3" />
+				
+				<datalist  id="tagslist3">
+					{{{innerhtml.RoleTag}}}
+				</datalist >
+			</div>
+			<div class="large-2 columns" style="margin-top:80px;">
+				
+				<a href="#" id="jobsearch" class="button [tiny small large]">Search</a>
+				
 			</div>
 		</div>
 	 
 	 <hr />
 	 
-		<div class="row">
+		<div class="row" id="results_space">
 			 
-			<div class="large-12 columns">				
-					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
-					<div class="large-11 columns">
-						<h5>TeliportMe</h5>
-						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-						<ul class="inline-list">
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-						</ul>
-					</div>		 		 
-			</div>
-			
-			<div class="large-12 columns">				
-					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
-					<div class="large-11 columns">
-						<h5>TeliportMe</h5>
-						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-						<ul class="inline-list">
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-						</ul>
-					</div>		 		 
-			</div>
-			
-			<div class="large-12 columns">				
-					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
-					<div class="large-11 columns">
-						<h5>TeliportMe</h5>
-						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-						<ul class="inline-list">
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-						</ul>
-					</div>		 		 
-			</div>
-			
-			<div class="large-12 columns">				
-					<div class="large-1 columns small-2"><img src="http://placehold.it/80x80&text=[img]"/></div>
-					<div class="large-11 columns">
-						<h5>TeliportMe</h5>
-						<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-						<ul class="inline-list">
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-							<li><a href="">Bangalore</a></li>
-						</ul>
-					</div>		 		 
-			</div>
+								
 			
 		</div>
 	 
@@ -92,25 +71,40 @@
 			</div>
 		</footer>
 		
-		<script src="/vendor/foundation-5.3.3/js/vendor/jquery.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="/vendor/foundation-5.3.3/js/foundation.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/tag-it.min.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script>
 		  $(document).foundation();
 		  var doc = document.documentElement;
 		  doc.setAttribute('data-useragent', navigator.userAgent);
-		</script>
-		
-		<script type="text/javascript">
-			$(document).ready(function() {
-				var sampleTags = ['c++', 'java', 'php', 'coldfusion', 'javascript', 'asp', 'ruby', 'python', 'c', 'scala', 'groovy', 'haskell', 'perl', 'erlang', 'apl', 'cobol', 'go', 'lua'];
-				$("#myTags").tagit({
-					autocomplete: {delay: 0, minLength: 2},
-					availableTags: sampleTags,
+		  		  
+		  $(document).ready(function() {
+				
+				$("#jobsearch").on("click",function() {
+					
+					$("#results_space").html("");
+					$.post("/api/search",{"names":[$("#skilltagslist").val(),$("#locationtagslist").val(),$("#roletagslist").val()]},function(data){
+						
+						$("#results_space").html(templateJob(data));						
+					
+					});
+										
 				});
-			});
-		</script>	
+				
+		  });
+
+		  function templateJob(data) {
+		  
+			var html = "";
+			for(x in data) {
+				html += '<div class="large-12 columns"><div class="large-1 columns small-2"><img src="'+data[x].startup.logo_url+'"/></div><div class="large-11 columns"><h5>'+data[x].startup.name+'</h5><p>'+data[x].startup.product_desc+'</p><p>'+data[x].startup.high_concept+'</p><ul class="inline-list"><li><a href="">'+data[x].job_type+'</a></li><li><a href="">'+data[x].title+'</a></li></ul></div></div>';
+			}
+			return html;		  
+		  
+		  }
+		  
+		</script>
 		
 	</body>
 </html>
